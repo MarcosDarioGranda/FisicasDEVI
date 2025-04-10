@@ -6,7 +6,7 @@ public class triggerDestroy : MonoBehaviour
 {
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Bullet"))
         {
             Destroy(gameObject);
         }
